@@ -1,0 +1,21 @@
+@import './variables.css';
+@import './utility.css';
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-mono);
+    font-size: 62.5%;
+  }
+  .font-primary{
+    color: var(--green);
+    font-size:1.6rem
+  }
+  .background{
+    background: var(--navy);
+    min-height: 100vh;
+  }
+  .container{
+    margin:0 4rem;
+    min-height: 100vh;
+  }

@@ -1,0 +1,16 @@
+@import './variables.css';
+.font-xs{
+    font-size:var(--fz-xs)
+}
+.d-flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
