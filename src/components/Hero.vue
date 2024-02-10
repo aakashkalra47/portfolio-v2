@@ -1,12 +1,12 @@
 <template>
-    <section class="d-flex align-center justify-center hero">
-        <div>
+    <section href="#" class="d-flex align-items-center hero">
+        <div >
             <div class="font-primary hero-item">Hi, my Name is</div>
             <h2 class="name big-heading hero-item">Aakash Kalra.</h2>
-            <h3 class="frontend-dev big-heading hero-item">Software Engineer Frontend Developer </h3>
+            <h3 class="frontend-dev big-heading hero-item">Frontend Developer </h3>
             <h4 class="description hero-item">
                 I’m a software engineer specializing in building webssites.
-                Currently, I’m focused on building accessible, human-centered products at <a href="https://falkonry.com/" class="font-primary" :style="{'text-decoration':'none'}">Falkonry</a>.
+                Currently, I’m focused on building accessible, human-centered products at <a href="https://falkonry.com/" class="font-primary link">Falkonry</a>.
             </h4>
             <div class="hero-item d-flex">
                 <a class="font-primary btn" style="font-size=var(--fz-md)" >Say Hello !!</a>
@@ -26,13 +26,11 @@ export default {
     margin: 0px auto;
     max-width: 1000px;
     font-family: var(--font-sans);
-    height: 100vh
+    height: 100vh;
 } 
 .hero-item{
     margin-top: 1rem;
-}
-.empty-area{
-    height: 1;
+    font-size:var(--fz-md)
 }
 .big-heading{
     margin: 0px;
@@ -53,7 +51,7 @@ export default {
     color: var(--light-slate);
     font-weight: 100;
     max-width: 500px;
-    font-size: 1.6rem;
+    font-size: var(--fz-md);
     word-wrap: break-word;
 }
 .btn{
@@ -61,5 +59,6 @@ export default {
     padding:1.5rem var(--fz-md);
     border: var(--green) 1px solid;
     margin-top:2rem;
+    font-size: var(--fz-md);
 }
 </style>

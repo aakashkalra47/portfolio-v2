@@ -8,9 +8,31 @@
 .flex-1{
     flex: 1;
 }
-.justify-center{
+.justify-content-center{
     justify-content: center;
 }
-.align-center{
+.align-items-center{
     align-items: center;
+}
+.link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.link:after {
+    content: '';
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: var(--green);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in;
+}
+.link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }

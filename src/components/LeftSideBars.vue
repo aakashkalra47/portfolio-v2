@@ -21,7 +21,7 @@ export default {
     },
     computed:{
         iconsPath(){
-            return require(`../styles/icons/icons.svg`)
+            return require(`../styles/icons/icons.svg`) //eslint-disable-line
         }
     }
 }

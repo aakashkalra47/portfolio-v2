@@ -1,33 +1,27 @@
 <template > 
-<div class="background">
-  <div class="container">
-    <left-side-bars></left-side-bars>
-      <navbar></navbar>
-      <hero></hero>
-      <projects></projects>
-    <right-side-bars></right-side-bars>
+  <div class="background">
+    <div class="container">
+      <left-side-bars/>
+      <navbar/>
+      <hero/>
+      <about-me/>
+      <experience-section/>
+      <projects/>
+      <contact-me/>
+      <right-side-bars/>
+    </div>
   </div>
-</div>
 </template>
-
-<script>
+<script setup>
 import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue'
 import LeftSideBars from './components/LeftSideBars.vue'
 import RightSideBars from './components/RightSidebar.vue'
 import Projects from './components/Projects.vue'
-export default {
-  name: 'App',
-  components: {
-    Navbar,
-    Hero,
-    LeftSideBars,
-    RightSideBars,
-    Projects
-  }
-}
+import AboutMe from './components/AboutMe.vue'
+import ExperienceSection from './components/ExperienceSection.vue'
+import ContactMe from './components/ContactMe.vue'
 </script>
-
 <style>
 @import './styles/index.css';
 </style>
