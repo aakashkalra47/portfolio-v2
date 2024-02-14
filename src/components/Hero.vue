@@ -1,27 +1,42 @@
 <template>
     <section href="#" class="d-flex align-items-center hero">
-        <div >
-            <div class="font-primary hero-item">Hi, my Name is</div>
-            <h2 class="name big-heading hero-item">Aakash Kalra.</h2>
-            <h3 class="frontend-dev big-heading hero-item">Frontend Developer </h3>
-            <h4 class="description hero-item">
-                I’m a software engineer specializing in building webssites.
-                Currently, I’m focused on building accessible, human-centered products at <a href="https://falkonry.com/" class="font-primary link">Falkonry</a>.
-            </h4>
-            <div class="hero-item d-flex">
-                <a class="font-primary btn" style="font-size=var(--fz-md)" >Say Hello !!</a>
-            </div>
-        </div>
+      <div>
+        <transition-group name="hero-list">
+          <div v-for="(item, index) in renderItems" v-html="item" :key="item" 
+            :style="{transitionDelay:`${(index+1)*100}ms`}"
+          >
+          </div>
+        </transition-group>
+      </div>
     </section>
 </template>
-<script>
-
-export default {
-    //eslint-disable-next-line
-    name:'Hero'
-}
+<script setup>
+import { ref, onMounted} from "vue";
+const items=[
+  '<div class="font-primary hero-item">Hi, my Name is</div>',
+  '<h2 class="name big-heading hero-item">Aakash Kalra</h2>',
+  '<h3 class="frontend-dev big-heading hero-item">Frontend Developer </h3>',
+  `
+    <h4 class="description hero-item">
+      I’m a software engineer specializing in building complex websites.
+      I have 1.5 years of working experience as Front-end developer in <a class="font-primary link" href="https://falkonry.com/">Falkonry</a>. 
+    </h4>
+  `,
+  `
+    <div class="hero-item d-flex">
+      <a class="font-primary btn" style="font-size=var(--fz-md)" href="https://www.linkedin.com/in/aakash-kalra-9640a31aa/">Get In Touch</a>
+    </div>
+  `
+]
+const renderItems = ref([])
+onMounted(()=>{
+  setTimeout(()=>{
+    items.map(e=>renderItems.value.push(e))
+  }, 1000)
+})
 </script>
-<style scoped>
+<style>
+
 .hero{
     margin: 0px auto;
     max-width: 1000px;
@@ -30,7 +45,7 @@ export default {
 } 
 .hero-item{
     margin-top: 1rem;
-    font-size:var(--fz-md)
+    font-size:var(--fz-md);
 }
 .big-heading{
     margin: 0px;
@@ -45,7 +60,7 @@ export default {
 }
 .frontend-dev{
     color: var(--light-slate);
-    font-weight: 600;
+    font-weight:600;
 }
 .description{
     color: var(--light-slate);
@@ -60,5 +75,16 @@ export default {
     border: var(--green) 1px solid;
     margin-top:2rem;
     font-size: var(--fz-md);
+    text-decoration: none;
+}
+.hero-list-enter-active,
+.hero-list-leave-active {
+  transition: var(--transition);
+}
+.hero-list-enter-from,
+.hero-list-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+
 }
 </style>

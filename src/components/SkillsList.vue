@@ -7,14 +7,14 @@
 </template>
 <script setup>
 const { liWidth , list }= defineProps({
-    liWidth:{
-        type: Number,
-        default:50
-    },
-    list:{
-        type:Array,
-        default: ()=>[]
-    }
+  liWidth:{
+    type: Number,
+    default:50
+  },
+  list:{
+    type:Array,
+    default: ()=>[]
+  }
 })
 </script>
 <style scoped>
