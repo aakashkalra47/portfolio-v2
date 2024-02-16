@@ -26,7 +26,7 @@
           <transition name="list">
             <a v-show="show" 
               target="_blank"
-              href="https://drive.google.com/file/d/1aMda5PWQC2hc1KTuPNnBqLWUCHREO_t4/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1SRWc61hdd5okYDk7fYqqSVtqWOkK7lUY/view"
               :style="{transitionDelay:'500ms'}"
             >
               <div class="nav-item nav-btn d-flex align-items-center font-primary">

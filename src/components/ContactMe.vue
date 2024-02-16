@@ -40,7 +40,7 @@ const reveal = useIntersectionObservable(container)
   transition: all 2s ease-in;
 }
 .contact-enter-from {
-  transform: translateY(-50px);
+  transform: translateY(-20px);
   opacity: 0;
 }
 .title{
