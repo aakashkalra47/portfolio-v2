@@ -29,12 +29,17 @@ const projects=[
   {
     name:'Saker',
     description:`
-						Saker is a Falkonry’s internal framework built on React, Redux, and React-router.
-						I worked on building UI components and wrote unit tests for components using react-testing-library.
+						Saker is a Falkonry’s internal framework built on Vue, Vuex, and Vue-router.
+						I worked on building UI components and wrote unit tests for components using Vue-test-utils.
 						I updated end-to-end tests of all features of v2 to v3 using Cypress.js.
 						I also introduced Storybook to the project for documenting core architecture components.
 					`,
-    techstack:["React", "Redux","Jest","Cypress", "React-testing-library"]
+    techstack:["Vue.js", "Vuex","Jest","Cypress", "Vue-test-utils"]
+  },
+  {
+    name:'Signal Manager',
+    description:"Signal Manager is Falkonry's application designed to organize all manufacturing plant signals into tree hierarchies. My responsibilities included estimating stories, building web pages and UI components such as tables, trees, signal charts, and modals using Vue.js, Vuetify and managing application state with Vuex. Additionally, I wrote unit tests for components using Vue- test-utils and end-to-end tests with Cypress.js.",
+    techstack:["Vue.js", "Vuex","Jest","Cypress", "Vue-test-utils"]
   },
   {
     name:'Ecommerce App',
