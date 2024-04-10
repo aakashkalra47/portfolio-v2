@@ -27,7 +27,7 @@
     </div>
 </template>
 <script setup>
-import { useIntersectionObservable } from '@/hooks/intersectionObservable'
+import { useIntersectionObservable } from '@/composables/intersectionObservable'
 import { ref } from 'vue'
 const projectRef = ref(false)
 const reveal = useIntersectionObservable(projectRef)

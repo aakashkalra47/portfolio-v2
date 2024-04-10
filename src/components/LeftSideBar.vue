@@ -29,9 +29,9 @@ const icons=[
     link:'https://www.codechef.com/users/aakash_kalra'
   },
   {
-    name:'instagram',
-    link:'https://www.instagram.com/aakashkalra47/'
-  }         
+    name:'leetcode',
+    link:'https://leetcode.com/aakashkalra47/'
+  }          
 ]
 const iconsPath = computed (()=>{
   return require(`../styles/icons/icons.svg`) //eslint-disable-line

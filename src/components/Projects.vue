@@ -22,43 +22,43 @@
 	</section>
 </template>
 <script setup>
-import { useIntersectionObservable } from '@/hooks/intersectionObservable'
+import { useIntersectionObservable } from '@/composables/intersectionObservable'
 import { ref } from 'vue'
 import ProjectCard from './ProjectCard.vue'
 const projects=[
   {
     name:'Saker',
     description:`
-						Saker is a Falkonry’s internal framework built on Vue, Vuex, and Vue-router.
-						I worked on building UI components and wrote unit tests for components using Vue-test-utils.
+						Saker is a Falkonry’s internal framework built on React.js, Redux.js, and React-router.
+						I worked on building UI components and wrote unit tests for components using React-testing-library.
 						I updated end-to-end tests of all features of v2 to v3 using Cypress.js.
 						I also introduced Storybook to the project for documenting core architecture components.
 					`,
-    techstack:["Vue.js", "Vuex","Jest","Cypress", "Vue-test-utils"]
+    techstack:["React.js", "Redux.js","Jest","Cypress", "React-testing-library"]
   },
   {
     name:'Signal Manager',
-    description:"Signal Manager is Falkonry's application designed to organize all manufacturing plant signals into tree hierarchies. My responsibilities included estimating stories, building web pages and UI components such as tables, trees, signal charts, and modals using Vue.js, Vuetify and managing application state with Vuex. Additionally, I wrote unit tests for components using Vue- test-utils and end-to-end tests with Cypress.js.",
-    techstack:["Vue.js", "Vuex","Jest","Cypress", "Vue-test-utils"]
+    description:"Signal Manager is Falkonry's application designed to organize all manufacturing plant signals into tree hierarchies. My responsibilities included estimating stories, building web pages and UI components such as tables, trees, signal charts, and modals using React.js and managing application state with Redux.js. Additionally, I wrote unit tests for components using React-testing-library and end-to-end tests with Cypress.js.",
+    techstack:["React.js", "Redux.js","Jest","Cypress", "React-testing-library"]
   },
   {
     name:'Ecommerce App',
     description:'It is an eCommerce app for fashion with a frontend written in React.js. For the backend API, I have used Node.js with Express.js framework and MongoDB.',
-    techstack:['React', 'Redux','Material-UI','Express'],
+    techstack:['React.js', 'Redux.js','Material-UI','Express'],
     deployement: 'https://github.com/aakashkalra47/ecom-frontend',
     github: 'https://github.com/aakashkalra47/ecom-frontend'
   },
   {
     name:'Weather Prediction Dashboard',
     description:'Implemented in React and Redux by using openweathermap API shows charts for future week weather prediction. It shows the charts of pressure, humidity, and temperature.',
-    techstack:['React', 'Redux'],
+    techstack:['React.js', 'Redux.js'],
     deployement: 'https://weather-prediction-05zn.onrender.com/',
     github: 'https://github.com/aakashkalra47/weather-prediction'
   },
   {
     name:'Notes App',
     description:'It is a note taking app in React.js. Users can fetch the notes of a particular month and year by applying filters and can also sort the notes according to the time of creation.',
-    techstack:['React', 'Redux', 'Material-UI'],	
+    techstack:['React.js', 'Redux.js', 'Material-UI'],	
     deployement: 'https://notes-snxe.onrender.com/',
     github: 'https://github.com/aakashkalra47/notes-app'	
   },

@@ -17,14 +17,14 @@
 </template>
 <script setup>
 import { ref } from 'vue';
-import { useIntersectionObservable } from '@/hooks/intersectionObservable';
+import { useIntersectionObservable } from '@/composables/intersectionObservable';
 import SkillsList from './SkillsList.vue';
 const title = "Where I’ve Worked"
 const index = 2;
 const list= [
   'Worked as a frontend engineer on a building application using agile framework for analyzing time-series operational data to predict failures.',
-  'Worked on building UI components with config-driven architecture using Vue.js and Vuex.',
-  'Worked on writing unit tests using Vue-test-utils and Jest.js.',
+  'Worked on building UI components with config-driven architecture using React.js and Redux.js.',
+  'Worked on writing unit tests using React-testing-library and Jest.js.',
   'Worked on writing e2e tests of app using Cypress.js.'
 ]
 const experienceSection = ref(null)

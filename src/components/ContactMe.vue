@@ -19,7 +19,7 @@
 				</div>
 				<div :style="{padding:'3rem',flexDirection:'column'}" class="d-flex align-content-center">
 					<div :style="{margin:' 0.5rem 0'}" class="d-flex justify-content-center">
-						<a class="contributor-link" href="https://github.com/bchiang7/v4" target="_blank">Built by Aakash Kalra</a>
+						<a class="contributor-link" href="https://github.com/aakashkalra47/portfolio-v2" target="_blank">Built by Aakash Kalra</a>
 					</div>
 					<div :style="{margin:' 0.5rem 0'}" class="d-flex justify-content-center">
 						<a class="contributor-link" href="https://github.com/bchiang7/v4" target="_blank">Design Inspired from Brittany Chiang</a>
@@ -30,7 +30,7 @@
 	</section>
 </template>
 <script setup>
-import { useIntersectionObservable } from "@/hooks/intersectionObservable";
+import { useIntersectionObservable } from "@/composables/intersectionObservable";
 import { ref } from "vue";
 const container = ref(null)
 const reveal = useIntersectionObservable(container)

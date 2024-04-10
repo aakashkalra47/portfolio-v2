@@ -10,7 +10,7 @@
 					<div class="d-flex">
 						<div>
 							<div class="description-container">
-								I'm Aakash, a Frontend Developer with 1.5 years of experience in working with Vue.js and Vuex.
+								I'm Aakash, a Frontend Developer with 1.6 years of experience in working with React.js and Redux.js.
 								I'm a computer science undergraduate like to work with different aspects of software developement.
 								I have knowledge of multiple programming languages, Web technologies and Database management. I also enjoy doing competitive programming.
 							</div>
@@ -37,8 +37,8 @@
 <script setup>
 import { ref } from 'vue';
 import SkillsList from './SkillsList.vue';
-const skils=['JavaScript (ES6+)','Vue.js','Vuetify', 'Vuex', 'Vue-test-utils', 'Jest', 'Git']
-import { useIntersectionObservable } from '../hooks/intersectionObservable'
+const skils=['JavaScript (ES6+)','React.js','Redux.js', 'React-testing-library', 'HTML','CSS', 'Jest', 'Git','Node.js','Express.js','MongoDB','Vue.js']
+import { useIntersectionObservable } from '../composables/intersectionObservable'
 defineProps({
   index:{
     type:Number,

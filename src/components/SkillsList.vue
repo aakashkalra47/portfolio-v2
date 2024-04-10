@@ -1,8 +1,8 @@
 <template>
     <ul>
-        <li v-for="element in list" :key="element" :style="{width:`${liWidth}%`}">
-               {{ element }} 
-        </li>
+      <li v-for="element in list" :key="element" :style="{width:`${liWidth}%`}">
+        {{ element }} 
+      </li>
     </ul>
 </template>
 <script setup>
