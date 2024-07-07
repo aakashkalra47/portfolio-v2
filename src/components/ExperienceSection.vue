@@ -7,7 +7,7 @@
 					<div class="line"></div>
 				</div>
 				<div class="company-heading">Associate Software Engineer <a class="font-primary" :style="{fontSize: '2rem'}">@Falkonry</a></div>
-				<div class="company-experience">June 2022 - Dec 2023</div>
+				<div class="company-experience">June 2022 - Present</div>
 				<div class="list-container">
 					<skills-list :li-width="100" :list="list"/>
 				</div>
