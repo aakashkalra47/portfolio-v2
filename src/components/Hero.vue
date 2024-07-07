@@ -14,7 +14,7 @@
 import { ref, onMounted} from "vue";
 const items=[
   '<div class="font-primary hero-item">Hi, my Name is</div>',
-  '<h2 class="name big-heading hero-item">Aakash Kalra</h2>',
+  '<h3 class="name big-heading hero-item">Aakash Kalra</h3>',
   '<h3 class="frontend-dev big-heading hero-item">Frontend Developer </h3>',
   `
     <h4 class="description hero-item">
@@ -38,10 +38,15 @@ onMounted(()=>{
 <style>
 
 .hero{
-    margin: 0px auto;
-    max-width: 1000px;
-    font-family: var(--font-sans);
-    height: 100vh;
+  margin: 0px auto;
+  width: 80%;
+  font-family: var(--font-sans);
+  height: 100vh;
+}
+@media (max-width:768px){
+	.hero{
+		width:90%;
+	}
 } 
 .hero-item{
     margin-top: 1rem;
@@ -49,10 +54,12 @@ onMounted(()=>{
 }
 .big-heading{
     margin: 0px;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 6vw, 80px);
     font-family: var(--font-sans);
     letter-spacing: -1  px;
     word-spacing: 0px;
+    color: transparent;
+  text-shadow: 0 0 5px rgba(34,43,43,0.5);
 }
 .name{
     color: var(--lightest-slate);

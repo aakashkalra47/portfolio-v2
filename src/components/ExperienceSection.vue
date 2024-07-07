@@ -8,7 +8,7 @@
 				</div>
 				<div class="company-heading">Associate Software Engineer <a class="font-primary" :style="{fontSize: '2rem'}">@Falkonry</a></div>
 				<div class="company-experience">June 2022 - Dec 2023</div>
-				<div :style="{width:'80%',textAlign:'justify'}">
+				<div class="list-container">
 					<skills-list :li-width="100" :list="list"/>
 				</div>
 			</div>
@@ -39,8 +39,33 @@ const reveal = useIntersectionObservable(experienceSection)
   opacity: 0;
 }
 .experience-container{
-    margin: 15rem auto;
-    max-width: 900px;
+  margin: 15rem auto;
+  max-width: 80%;
+}
+.list-container{
+  width:80%;
+  text-align:justify;
+}
+@media (max-width: 768px){
+	.experience-container{
+    margin: 15rem 3rem;
+	}
+  .list-container{
+    width:100%;
+  }
+}
+@media (max-width: 1200px){
+	.experience-container{
+    /* margin: 15rem 5rem; */
+	}
+}
+@media (max-width: 768px){
+	.experience-container{
+    margin: 15rem 3rem;
+	}
+  .list-container{
+    width:100%;
+  }
 }
 .company-heading{
     font-size: 2rem;

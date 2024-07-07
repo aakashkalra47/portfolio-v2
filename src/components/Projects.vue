@@ -75,18 +75,18 @@ const reveal = useIntersectionObservable(projectsSection)
 </script>
 <style scoped>
 .title{
-		font-size: 3rem;
-		font-weight: 700;
-		color: var(--white);
-		font-family: var(--font-sans);
-		margin: 8rem 0px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+  font-family: var(--font-sans);
+  margin: 8rem 0px;
 }
 .card-container{
-		display: flex;
-		flex-wrap: wrap;
-		width: 75%;
-		max-width: 1000px;
-		margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .list-enter-active,
 .list-leave-active {

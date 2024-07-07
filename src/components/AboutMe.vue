@@ -7,7 +7,7 @@
 						<div><span class="font-primary">0{{ index }}.</span> {{ title  }}</div>
 						<div class="line"></div>
 					</div>
-					<div class="d-flex">
+					<div class="flex-container">
 						<div>
 							<div class="description-container">
 								I'm Aakash, a Frontend Developer with 1.6 years of experience in working with React.js and Redux.js.
@@ -20,11 +20,13 @@
 							<div>
 									<skills-list :list="skils"/>
 							</div>
-							</div>
-						<div class="picture-container">
-							<div :style="{position:'relative',height:'25rem',width:'25rem'}">
-								<div class="picture">
-									<img src="Aakash.jpeg" height="250" width="250" />
+						</div>
+						<div class="flex-container" :style="{justifyContent:'center'}">
+							<div class="picture-container">
+								<div :style="{position:'relative',height:'25rem',width:'25rem'}">
+									<div class="picture">
+										<img src="Aakash.jpeg" height="250" width="250" />
+									</div>
 								</div>
 							</div>
 						</div>
@@ -62,9 +64,42 @@ const reveal = useIntersectionObservable(container)
 }
 .about-me-container{
 	margin: 5rem auto;
-	max-width: 900px;
+	max-width: 800px;
+	width: 60%;
 	display: flex;
 	justify-content: center;
+}
+.description-container{
+	margin-bottom: 2rem;
+	flex-basis: 60%;
+	color: var(--slate);
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+	text-align: justify;
+	margin-right: 2rem;
+}
+@media (max-width: 1080px){
+	.about-me-container{
+		width: 80%;
+	}
+}
+@media (max-width: 900px){
+	.flex-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.description-container{
+		margin-right: 0;
+	}
+}
+.flex-container{
+	display: flex;
+}
+@media (max-width:768px){
+	.about-me-container{
+		width:90%;
+	}
 }
 .header{
 	font-size: 4.5rem;
@@ -83,18 +118,10 @@ const reveal = useIntersectionObservable(container)
 	background-color: var(--slate);
 	opacity: 0.5;
 }
-.description-container{
-	margin-bottom: 2rem;
-	flex-basis: 60%;
-	color: var(--slate);
-	font-size: 1.6rem;
-	line-height: 2.5rem;
-	text-align: justify;
-	margin-right: 2rem;
-}
 .picture-container{
 	width: 40%;
 	display: flex;
+	justify-content: center;
 }
 .picture{
 	height: 25rem;

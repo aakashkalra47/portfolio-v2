@@ -11,6 +11,14 @@ html{
   scrollbar-color: var(--dark-slate);
   scroll-behavior: smooth;
 }
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px; 
+  background: transparent;
+}
 .font-primary{
   color: var(--green);
 }
@@ -20,7 +28,17 @@ html{
 }
 .container{
   margin:0 4rem;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+}
+@media (max-width:900px){
+  .container{
+    margin: 0 4rem;
+  }
+}
+@media (max-width: 480px){
+  .container{
+    margin: 0;
+  }
 }
 a{
   text-decoration: none;

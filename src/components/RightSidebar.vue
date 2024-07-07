@@ -27,7 +27,7 @@ onMounted(()=>{
 .bar{
     color: var(--slate);
     right: 4rem;
-    left: auto; 
+    /* left: auto;  */
     bottom: 0px;   
     width: 3.9rem;
     position: fixed;
@@ -35,6 +35,16 @@ onMounted(()=>{
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+@media (max-width: 900px){
+  .bar{
+    right: 1rem;
+  }
+}
+@media (max-width: 480px){
+  .bar{
+    right: 0rem;
+  }
 }
 .email{
     font-size: 1.3rem;

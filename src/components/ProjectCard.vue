@@ -69,6 +69,20 @@ export default {
 	margin: 0 1.5rem 1.5rem 0;
 	transition: 0.2s;
 }
+@media (max-width:1200px) {
+  .card{
+    width: 47%;
+  }
+  .card:nth-child(even){
+    margin: 0 0 1.5rem 0;
+  }
+}
+@media (max-width:600px) {
+  .card{
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+}
 .card-content{
     background-color: var(--light-navy);
 		position: relative;

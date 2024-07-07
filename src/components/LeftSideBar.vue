@@ -1,6 +1,6 @@
 <template>
     <transition name="sidebar">
-      <div v-show="show" class="nav-bar">
+      <div v-show="show" class="bar">
         <div v-for="{name,link} in icons" :key="name">
           <a :href="link" target="_blank">
             <svg class="icon">
@@ -49,14 +49,25 @@ onMounted(()=>{
 .sidebar-enter-from {
   opacity: 0;
 }
-.nav-bar{
+.bar{
     width: 3.9rem;
     position: fixed;
+    left: 4rem;
     bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+@media (max-width: 900px){
+  .bar{
+    left: 1rem;
+  }
+}
+@media (max-width: 480px){
+  .bar{
+    left: 0rem;
+  }
 }
 .icon {
   fill: var(--lightest-slate);
